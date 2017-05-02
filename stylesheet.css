@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister');
+/*font-family: 'Dosis', sans-serif;*/
+/*font-family: 'Love Ya Like A Sister', cursive;*/
+
+
+body{font-family: 'Love Ya Like A Sister';
+background-image: url("images/orange.jpg");
+}
+.top{text-align: center;
+}
+.unordered{
+font-family: 'Love Ya Like A Sister';
+  margin: auto;
+  width: 70%;
+  /*border-top: solid 1px black;*/
+
+  list-style: none;
+}
+
+
+.listed{
+  padding: 10px;
+}
+
+.qpng{
+  width: 10%;
+}
+
+.listBorder{
+
+  background-color: white;
+  border-radius: 10px;
+  margin: auto;
+  width: 30%;
+  border: 4px solid black;
+}
+.inputCenter{
+  width:30%;
+  margin: auto;
+}
+.forms{
+
+  margin-left: auto;
+  text-align: center;
+  border-radius: 10px;
+}

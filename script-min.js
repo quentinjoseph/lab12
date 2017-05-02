@@ -1,0 +1,1 @@
+var app=angular.module("myMod",[]);app.controller("myController",function(o){o.todoList=[],o.addTodo=function(t){console.log("hello"),o.todoList.push({item:t.todo}),document.getElementById("clear").reset(),console.log(o.todoList)},o.goAway=function(t){console.log("yo"),o.todoList.splice(t,1)}});

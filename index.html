@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body ng-app="myMod" ng-controller="myController">
+
+
+<div class="inputCenter">
+<form id="clear" >
+
+
+    <input class="forms" type="text" placeholder="list your to do item" ng-model="item.todo">
+    <button class="forms" type="submit" name="button" ng-click="addTodo(item)">add</button>
+    <input class="forms" type="text" placeholder="filter by letter" ng-model='filterInput'>
+</form>
+</div>
+<div class="top">
+  <h1>To do List</h1>
+</div>
+<div class="background">
+
+
+<div class="listBorder">
+    <ul class="unordered" ng-repeat="things in todoList | filter:filterInput">
+      <li class="listed"><img class="qpng" ng-click ="goAway($index)" src="images/q.png" alt="">{{things.item}}</li>
+    </ul>
+</div>
+</div>
+<!-- <img ng-click ="goAway(item)" class="qpng" src="images/q.png" alt=""> -->
+
+
+    <script type="text/javascript"src="angular/angular.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript"src="https://code.jquery.com/jquery-3.2.1.min.js">
+
+    </script>
+  </body>
+</html>
